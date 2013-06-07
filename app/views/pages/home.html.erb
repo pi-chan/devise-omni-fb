@@ -1,0 +1,8 @@
+
+<% if user_signed_in? %>
+  <h1>Welcome, <%= @user.name %> !</h1>
+  <%= link_to 'Logout', destroy_user_session_path %>
+<% else %>
+  <h1>Not logged in!</h1>
+  <%= link_to 'Login with Facebook', user_omniauth_authorize_path(:facebook) %>
+<% end %>
