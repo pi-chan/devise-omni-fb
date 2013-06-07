@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.beta1'
+ruby '1.9.3'
 
 gem 'devise', github: 'plataformatec/devise', branch: 'rails4'
 gem 'omniauth-facebook'
