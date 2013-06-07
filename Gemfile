@@ -6,10 +6,7 @@ ruby '2.0.0'
 
 gem 'devise', github: 'plataformatec/devise', branch: 'rails4'
 gem 'omniauth-facebook'
-
-group :development do
-  gem 'sqlite3'
-end
+gem 'sqlite3'
 
 # Gems used only for assets and not required
 # in production environments by default.
