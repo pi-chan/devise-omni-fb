@@ -2,7 +2,12 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
-  devise  :trackable, :omniauthable
+  devise  :trackable, :omniauthable, :rememberable
+
+  before_create :rememberable_value
+
+  def rememberable_value
+  end  
 
   def self.new_with_session(params, session)
     super.tap do |user|
